@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "wouter";
 import { Card, CardContent } from "@/components/ui/card";
 import destFrance from "@/assets/dest-france.png";
 import destSpain from "@/assets/dest-spain.png";
@@ -96,25 +97,27 @@ export function Destinations() {
                     : undefined
                 }
               >
-                <Card className="group overflow-hidden border-none shadow-sm hover:shadow-xl transition-all duration-300 h-[320px] cursor-pointer rounded-2xl">
-                  <CardContent className="p-0 h-full relative">
-                    <img
-                      src={dest.image}
-                      alt={dest.name}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute bottom-0 left-0 w-full p-4 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                      <h4 className="text-base font-bold font-serif mb-1 leading-tight">
-                        {dest.name}
-                      </h4>
-                      <div className="flex flex-col gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
-                        <span className="text-xs font-medium text-white/80">{dest.duration}</span>
-                        <span className="text-accent font-bold text-sm">{dest.price}</span>
+                <Link href={`/tours?destination=${encodeURIComponent(dest.name)}`}>
+                  <Card className="group overflow-hidden border-none shadow-sm hover:shadow-xl transition-all duration-300 h-[320px] cursor-pointer rounded-2xl">
+                    <CardContent className="p-0 h-full relative">
+                      <img
+                        src={dest.image}
+                        alt={dest.name}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute bottom-0 left-0 w-full p-4 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                        <h4 className="text-base font-bold font-serif mb-1 leading-tight">
+                          {dest.name}
+                        </h4>
+                        <div className="flex flex-col gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                          <span className="text-xs font-medium text-white/80">{dest.duration}</span>
+                          <span className="text-accent font-bold text-sm">{dest.price}</span>
+                        </div>
                       </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                </Link>
               </motion.div>
             );
           })}

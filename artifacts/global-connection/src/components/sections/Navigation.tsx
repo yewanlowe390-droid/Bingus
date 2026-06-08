@@ -16,11 +16,11 @@ export function Navigation() {
   }, []);
 
   const navLinks = [
-    { name: "Destinations", href: "#destinations" },
-    { name: "Tours", href: "#tours" },
-    { name: "Services", href: "#services" },
-    { name: "Gallery", href: "#gallery" },
-    { name: "Contact", href: "#contact" },
+    { name: "Destinations", href: "#destinations", external: false },
+    { name: "Tours", href: "/tours", external: true },
+    { name: "Services", href: "#services", external: false },
+    { name: "Gallery", href: "#gallery", external: false },
+    { name: "Contact", href: "#contact", external: false },
   ];
 
   return (
@@ -32,11 +32,17 @@ export function Navigation() {
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className={`text-sm font-medium transition-colors hover:text-accent ${isScrolled ? "text-slate-700" : "text-white/90"}`}>
-              {link.name}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.external ? (
+              <Link key={link.name} href={link.href} className={`text-sm font-medium transition-colors hover:text-accent ${isScrolled ? "text-slate-700" : "text-white/90"}`}>
+                {link.name}
+              </Link>
+            ) : (
+              <a key={link.name} href={link.href} className={`text-sm font-medium transition-colors hover:text-accent ${isScrolled ? "text-slate-700" : "text-white/90"}`}>
+                {link.name}
+              </a>
+            )
+          )}
           <Button data-testid="btn-get-quote" variant={isScrolled ? "default" : "secondary"} className="font-semibold rounded-full px-6">
             Get Quote
           </Button>
@@ -53,16 +59,27 @@ export function Navigation() {
 
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg py-4 px-4 flex flex-col gap-4">
-          {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href} 
-              className="text-base font-medium text-slate-800 hover:text-primary transition-colors"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {link.name}
-            </a>
-          ))}
+          {navLinks.map((link) =>
+            link.external ? (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-base font-medium text-slate-800 hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ) : (
+              <a
+                key={link.name}
+                href={link.href}
+                className="text-base font-medium text-slate-800 hover:text-primary transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.name}
+              </a>
+            )
+          )}
           <Button data-testid="btn-mobile-get-quote" className="w-full mt-2 rounded-full">
             Get Quote
           </Button>
