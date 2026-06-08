@@ -60,6 +60,30 @@ uri = "file://artifacts/global-connection/src/assets/tour-srilanka.png"
 type = "image"
 title = "Sri Lanka Tour"
 
+[[generated]]
+id = "hr7jYtOeZQfqQrR2UquaC"
+uri = "file://attached_assets/generated_images/france_portugal_through_spain_ca45.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "aK_HdswetGDGUUWkF9rpY"
+uri = "file://artifacts/global-connection/src/assets/tour-milan-netherlands.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "zmvhOMlQCb5NMvGumV9U9"
+uri = "file://artifacts/global-connection/src/assets/tour-lourdes.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "12im41j_k5XWhkvMcpjkd"
+uri = "file://artifacts/global-connection/src/assets/tour-france-spain-portugal.png"
+type = "image"
+title = "generated_image"
+
 [[outputs]]
 id = "UZOvqLXbMHPUMJsb6pm3s"
 uri = "file://artifacts/global-connection/src/assets/gallery_1.jpg"

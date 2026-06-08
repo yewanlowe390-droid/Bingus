@@ -3,6 +3,7 @@ import { Navigation } from "@/components/sections/Navigation";
 import { Hero } from "@/components/sections/Hero";
 import { Destinations } from "@/components/sections/Destinations";
 import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
+import { FeaturedDepartures } from "@/components/sections/FeaturedDepartures";
 import { Tours } from "@/components/sections/Tours";
 import { Services } from "@/components/sections/Services";
 import { Testimonials } from "@/components/sections/Testimonials";
@@ -53,6 +54,7 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
+        <FeaturedDepartures />
         <Destinations />
         <WhyChooseUs />
         <Tours />
