@@ -1,0 +1,85 @@
+import { Globe, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Link } from "wouter";
+
+export function Footer() {
+  return (
+    <footer className="bg-slate-950 text-slate-300 pt-20 pb-10 border-t border-slate-900">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          <div className="space-y-6">
+            <Link href="/" className="flex items-center gap-2">
+              <Globe className="h-8 w-8 text-primary" />
+              <span className="text-2xl font-bold tracking-tight text-white">Global Connection</span>
+            </Link>
+            <p className="text-sm leading-relaxed">
+              Your trusted partner for pilgrimages and premium holidays. Creating unforgettable journeys worldwide with over 15 years of excellence.
+            </p>
+            <div className="flex gap-4">
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-white">
+                <Facebook className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-white">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-white">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-white">
+                <Youtube className="w-5 h-5" />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
+            <ul className="space-y-4">
+              <li><a href="#destinations" className="hover:text-accent transition-colors">Destinations</a></li>
+              <li><a href="#tours" className="hover:text-accent transition-colors">Tour Packages</a></li>
+              <li><a href="#services" className="hover:text-accent transition-colors">Our Services</a></li>
+              <li><a href="#gallery" className="hover:text-accent transition-colors">Travel Gallery</a></li>
+              <li><a href="#contact" className="hover:text-accent transition-colors">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Popular Tours</h4>
+            <ul className="space-y-4">
+              <li><a href="#" className="hover:text-accent transition-colors">Holy Land Pilgrimage</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors">Jordan & Petra Explorer</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors">Greece Antiquities</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors">Dubai City Break</a></li>
+              <li><a href="#" className="hover:text-accent transition-colors">Sri Lanka Discovery</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Newsletter</h4>
+            <p className="text-sm mb-4">Subscribe to receive our latest offers and travel inspiration.</p>
+            <form className="flex flex-col gap-3">
+              <input 
+                type="email" 
+                placeholder="Email Address" 
+                className="bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                required
+              />
+              <button 
+                type="submit" 
+                className="bg-primary hover:bg-primary/90 text-white font-medium rounded-lg px-4 py-3 transition-colors"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+          <p>&copy; {new Date().getFullYear()} Global Connection Travels & Tours. All rights reserved.</p>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}

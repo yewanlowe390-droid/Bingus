@@ -1,0 +1,97 @@
+uploads = []
+
+[[generated]]
+id = "p_xHmas-mY3BjqYCyhB4c"
+uri = "file://artifacts/global-connection/src/assets/hero.png"
+type = "image"
+title = "Cinematic travel hero image"
+
+[[generated]]
+id = "q-kvj0ceUr40cKKq8U25Z"
+uri = "file://artifacts/global-connection/src/assets/dest-jordan.png"
+type = "image"
+title = "Jordan and Holy Land"
+
+[[generated]]
+id = "mtFG4LrgrjUNswtHLFzya"
+uri = "file://artifacts/global-connection/src/assets/dest-greece.png"
+type = "image"
+title = "Greece Santorini"
+
+[[generated]]
+id = "FWR72iDGHHQKliBtZX4Tn"
+uri = "file://artifacts/global-connection/src/assets/dest-dubai.png"
+type = "image"
+title = "Dubai skyline"
+
+[[generated]]
+id = "TDTC804d0hmQ43p_SgUw_"
+uri = "file://artifacts/global-connection/src/assets/dest-europe.png"
+type = "image"
+title = "Europe Paris"
+
+[[generated]]
+id = "OevtBuoudkTOMeKXgYbcf"
+uri = "file://artifacts/global-connection/src/assets/dest-srilanka.png"
+type = "image"
+title = "Sri Lanka beach"
+
+[[generated]]
+id = "EPQeOYvu5AavjOrghR9Dn"
+uri = "file://artifacts/global-connection/src/assets/tour-holyland.png"
+type = "image"
+title = "Holy Land Tour"
+
+[[generated]]
+id = "HEfnwNxZiWV_L-coqT1wA"
+uri = "file://artifacts/global-connection/src/assets/tour-petra.png"
+type = "image"
+title = "Jordan Petra Tour"
+
+[[generated]]
+id = "4KUco3rYMHFYYgdKuEiyL"
+uri = "file://artifacts/global-connection/src/assets/tour-greece.png"
+type = "image"
+title = "Greece Tour"
+
+[[generated]]
+id = "JqsHald3s52imP-ebjjy6"
+uri = "file://artifacts/global-connection/src/assets/tour-srilanka.png"
+type = "image"
+title = "Sri Lanka Tour"
+
+[[outputs]]
+id = "UZOvqLXbMHPUMJsb6pm3s"
+uri = "file://artifacts/global-connection/src/assets/gallery_1.jpg"
+type = "image"
+title = "premium travel photography destination beautiful landmark"
+
+[[outputs]]
+id = "XV2W31UBGrMsirKiHme97"
+uri = "file://artifacts/global-connection/src/assets/gallery_2.jpg"
+type = "image"
+title = "premium travel photography destination beautiful landmark"
+
+[[outputs]]
+id = "8aH-z6iaYIJy_wirjj2l6"
+uri = "file://artifacts/global-connection/src/assets/gallery_3.jpg"
+type = "image"
+title = "premium travel photography destination beautiful landmark"
+
+[[outputs]]
+id = "ZIHjzIyRMLuyrLvqJ7tVK"
+uri = "file://artifacts/global-connection/src/assets/gallery_4.jpg"
+type = "image"
+title = "premium travel photography destination beautiful landmark"
+
+[[outputs]]
+id = "l1Vxk9ykHPzajDFfzm6Bb"
+uri = "file://artifacts/global-connection/src/assets/gallery_5.jpg"
+type = "image"
+title = "premium travel photography destination beautiful landmark"
+
+[[outputs]]
+id = "gjcB1bnc2vyVIFq6Fgv7b"
+uri = "file://artifacts/global-connection/src/assets/gallery_6.jpg"
+type = "image"
+title = "premium travel photography destination beautiful landmark"
