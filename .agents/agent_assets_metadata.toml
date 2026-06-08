@@ -84,6 +84,60 @@ uri = "file://artifacts/global-connection/src/assets/tour-france-spain-portugal.
 type = "image"
 title = "generated_image"
 
+[[generated]]
+id = "7ys4mVx8V82OYCdVw4zs6"
+uri = "file://artifacts/global-connection/src/assets/dest-spain.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "3wNwdl3munNfmi1ElYNSj"
+uri = "file://artifacts/global-connection/src/assets/dest-italy.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "-RP-Az1Ur1YlTvtqYZOEc"
+uri = "file://artifacts/global-connection/src/assets/dest-france.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "DLYQLYl6cVuC_W_GsfZMj"
+uri = "file://artifacts/global-connection/src/assets/dest-germany.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "JxXvlmjdgFTsVW1UdbtXK"
+uri = "file://artifacts/global-connection/src/assets/dest-uk.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "knVDDKI_o_0DFy9S3Rvau"
+uri = "file://artifacts/global-connection/src/assets/dest-turkey.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "ZiBIjzUWFwrg8LMf_RqUw"
+uri = "file://artifacts/global-connection/src/assets/dest-america.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "YtJZCGeYGArwjQfFLj09_"
+uri = "file://artifacts/global-connection/src/assets/dest-india.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "6yGF_RUWgl_Zz3gE_yniD"
+uri = "file://artifacts/global-connection/src/assets/dest-australia.png"
+type = "image"
+title = "generated_image"
+
 [[outputs]]
 id = "UZOvqLXbMHPUMJsb6pm3s"
 uri = "file://artifacts/global-connection/src/assets/gallery_1.jpg"
