@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Globe, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useQuote } from "@/context/QuoteContext";
 
 export function Navigation() {
+  const { openQuote } = useQuote();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -43,7 +45,12 @@ export function Navigation() {
               </a>
             )
           )}
-          <Button data-testid="btn-get-quote" variant={isScrolled ? "default" : "secondary"} className="font-semibold rounded-full px-6">
+          <Button
+            data-testid="btn-get-quote"
+            variant={isScrolled ? "default" : "secondary"}
+            className="font-semibold rounded-full px-6"
+            onClick={() => openQuote()}
+          >
             Get Quote
           </Button>
         </nav>
@@ -80,7 +87,11 @@ export function Navigation() {
               </a>
             )
           )}
-          <Button data-testid="btn-mobile-get-quote" className="w-full mt-2 rounded-full">
+          <Button
+            data-testid="btn-mobile-get-quote"
+            className="w-full mt-2 rounded-full"
+            onClick={() => { openQuote(); setIsMobileMenuOpen(false); }}
+          >
             Get Quote
           </Button>
         </div>

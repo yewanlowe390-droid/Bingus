@@ -8,8 +8,10 @@ import { Navigation } from "@/components/sections/Navigation";
 import { Footer } from "@/components/sections/Footer";
 import { tours, ALL_DESTINATIONS } from "@/data/toursData";
 import type { Tour } from "@/data/toursData";
+import { useQuote } from "@/context/QuoteContext";
 
 function TourCard({ tour, index }: { tour: Tour; index: number }) {
+  const { openQuote } = useQuote();
   return (
     <motion.div
       layout
@@ -82,6 +84,7 @@ function TourCard({ tour, index }: { tour: Tour; index: number }) {
         <CardFooter className="p-6 pt-0">
           <Button
             data-testid={`btn-enquire-${tour.id}`}
+            onClick={() => openQuote({ tour: tour.title, departure: tour.departure, price: tour.price })}
             className="w-full rounded-full bg-[#0F4C81] hover:bg-[#0F4C81]/90 text-white font-semibold"
           >
             Enquire Now

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Calendar, Clock, MapPin, Star, Flame } from "lucide-react";
+import { useQuote } from "@/context/QuoteContext";
 import tourFranceSpain from "@/assets/tour-france-spain-portugal.png";
 import tourLourdes from "@/assets/tour-lourdes.png";
 import tourMilanNetherlands from "@/assets/tour-milan-netherlands.png";
@@ -48,6 +49,7 @@ const departures = [
 ];
 
 export function FeaturedDepartures() {
+  const { openQuote } = useQuote();
   return (
     <section id="featured-departures" className="py-20 bg-[#0F4C81] relative overflow-hidden">
       <div
@@ -142,6 +144,7 @@ export function FeaturedDepartures() {
                   </div>
                   <Button
                     data-testid={`btn-book-${tour.id}`}
+                    onClick={() => openQuote({ tour: tour.title, departure: tour.departure, price: tour.price })}
                     className={`rounded-full font-semibold shadow-md transition-all ${
                       tour.featured
                         ? "bg-accent hover:bg-accent/90 text-white px-6"

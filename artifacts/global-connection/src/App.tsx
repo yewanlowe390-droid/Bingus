@@ -5,6 +5,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import ToursPage from "@/pages/Tours";
+import { QuoteProvider } from "@/context/QuoteContext";
+import { QuoteModal } from "@/components/QuoteModal";
 
 const queryClient = new QueryClient();
 
@@ -22,10 +24,13 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-          <Router />
-        </WouterRouter>
-        <Toaster />
+        <QuoteProvider>
+          <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
+            <Router />
+          </WouterRouter>
+          <QuoteModal />
+          <Toaster />
+        </QuoteProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );
