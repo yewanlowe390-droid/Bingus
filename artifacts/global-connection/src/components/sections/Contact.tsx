@@ -83,7 +83,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 mb-1">Email Address</h4>
-                  <p className="text-slate-600">info@globalconnection.lk</p>
+                  <p className="text-slate-600">info@globalconnection.lk<br />globalconnectionoperations@gmail.com</p>
                 </div>
               </div>
 

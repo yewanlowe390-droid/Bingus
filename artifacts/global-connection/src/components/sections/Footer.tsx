@@ -54,6 +54,9 @@ export function Footer() {
               <li>
                 <a href="mailto:info@globalconnection.lk" className="hover:text-accent transition-colors">info@globalconnection.lk</a>
               </li>
+              <li>
+                <a href="mailto:globalconnectionoperations@gmail.com" className="hover:text-accent transition-colors">globalconnectionoperations@gmail.com</a>
+              </li>
             </ul>
           </div>
 
