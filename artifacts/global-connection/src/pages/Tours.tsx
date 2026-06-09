@@ -40,9 +40,6 @@ function TourCard({ tour, index }: { tour: Tour; index: number }) {
                 {tour.badge}
               </span>
             ) : <span />}
-            <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-[#0F4C81] font-bold text-sm shadow-sm">
-              {tour.price}
-            </span>
           </div>
           {tour.departure && (
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent px-4 py-3">

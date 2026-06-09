@@ -57,9 +57,6 @@ export function Tours() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
-                  <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-primary font-bold text-sm shadow-sm">
-                    {tour.price}
-                  </div>
                   {tour.departure && (
                     <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent px-4 py-3">
                       <div className="flex items-center gap-1.5 text-white text-xs font-semibold">
