@@ -112,7 +112,6 @@ export function Destinations() {
                         </h4>
                         <div className="flex flex-col gap-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
                           <span className="text-xs font-medium text-white/80">{dest.duration}</span>
-                          <span className="text-accent font-bold text-sm">{dest.price}</span>
                         </div>
                       </div>
                     </CardContent>
