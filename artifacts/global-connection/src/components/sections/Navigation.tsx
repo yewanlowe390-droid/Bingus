@@ -18,6 +18,7 @@ export function Navigation() {
   }, []);
 
   const navLinks = [
+    { name: "About", href: "/about", external: true },
     { name: "Destinations", href: "#destinations", external: false },
     { name: "Tours", href: "/tours", external: true },
     { name: "Services", href: "#services", external: false },
