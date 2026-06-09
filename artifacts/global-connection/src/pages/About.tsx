@@ -369,9 +369,9 @@ export default function About() {
                   <Phone className="w-4 h-4 text-accent" />
                   +94 11-7392070
                 </a>
-                <a href="mailto:info@globalconnection.lk" className="flex items-center gap-1.5 hover:text-[#0F4C81] transition-colors">
+                <a href="mailto:globalconnectionoperations@gmail.com" className="flex items-center gap-1.5 hover:text-[#0F4C81] transition-colors">
                   <Mail className="w-4 h-4 text-accent" />
-                  info@globalconnection.lk
+                  globalconnectionoperations@gmail.com
                 </a>
               </div>
             </div>

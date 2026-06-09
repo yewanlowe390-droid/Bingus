@@ -34,8 +34,8 @@ const contactDetails = [
   {
     icon: Mail,
     title: "Email Address",
-    lines: ["info@globalconnection.lk", "globalconnectionoperations@gmail.com"],
-    action: { label: "Send Email", href: "mailto:info@globalconnection.lk" },
+    lines: ["globalconnectionoperations@gmail.com"],
+    action: { label: "Send Email", href: "mailto:globalconnectionoperations@gmail.com" },
   },
   {
     icon: Clock,

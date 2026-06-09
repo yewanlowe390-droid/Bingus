@@ -1,4 +1,5 @@
-import { Globe, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import { Facebook, Instagram, Twitter, Youtube } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 import { Link } from "wouter";
 
 export function Footer() {
@@ -8,14 +9,18 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2">
-              <Globe className="h-8 w-8 text-primary" />
+              <img
+                src={logo}
+                alt="Global Connection Travels & Tours"
+                className="h-10 w-10 rounded-full object-cover"
+              />
               <span className="text-2xl font-bold tracking-tight text-white">Global Connection</span>
             </Link>
             <p className="text-sm leading-relaxed">
               Your trusted partner for pilgrimages and premium holidays. Creating unforgettable journeys worldwide with over 15 years of excellence.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-white">
+              <a href="https://web.facebook.com/globalconnectionlk" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-white">
                 <Facebook className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors text-white">
@@ -50,9 +55,6 @@ export function Footer() {
               </li>
               <li>
                 <a href="https://wa.me/9477737920" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">+94 77 737920 (WhatsApp)</a>
-              </li>
-              <li>
-                <a href="mailto:info@globalconnection.lk" className="hover:text-accent transition-colors">info@globalconnection.lk</a>
               </li>
               <li>
                 <a href="mailto:globalconnectionoperations@gmail.com" className="hover:text-accent transition-colors">globalconnectionoperations@gmail.com</a>

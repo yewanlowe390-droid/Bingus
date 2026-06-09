@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "wouter";
-import { Globe, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useQuote } from "@/context/QuoteContext";
+import logo from "@/assets/logo.jpg";
 
 export function Navigation() {
   const { openQuote } = useQuote();
@@ -30,7 +31,11 @@ export function Navigation() {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-sm py-4" : "bg-transparent py-6"}`}>
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Globe className={`h-8 w-8 ${isScrolled ? "text-primary" : "text-white"}`} />
+          <img
+            src={logo}
+            alt="Global Connection Travels & Tours"
+            className="h-10 w-10 rounded-full object-cover"
+          />
           <span className={`text-xl font-bold tracking-tight ${isScrolled ? "text-primary" : "text-white"}`}>Global Connection</span>
         </Link>
         
