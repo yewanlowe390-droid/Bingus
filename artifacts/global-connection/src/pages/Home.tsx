@@ -6,7 +6,6 @@ import { WhyChooseUs } from "@/components/sections/WhyChooseUs";
 import { FeaturedDepartures } from "@/components/sections/FeaturedDepartures";
 import { Tours } from "@/components/sections/Tours";
 import { Services } from "@/components/sections/Services";
-import { Testimonials } from "@/components/sections/Testimonials";
 import { Statistics } from "@/components/sections/Statistics";
 import { Gallery } from "@/components/sections/Gallery";
 import { Contact } from "@/components/sections/Contact";
@@ -59,7 +58,6 @@ export default function Home() {
         <WhyChooseUs />
         <Tours />
         <Services />
-        <Testimonials />
         <Statistics />
         <Gallery />
         <Contact />
