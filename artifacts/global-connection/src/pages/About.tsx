@@ -7,8 +7,7 @@ import { Button } from "@/components/ui/button";
 import { useQuote } from "@/context/QuoteContext";
 
 const milestones = [
-  { year: "2008", title: "Founded", description: "Global Connection Travels & Tours established in Sri Lanka with a mission to serve pilgrims and holiday travelers worldwide." },
-  { year: "2011", title: "First Pilgrimage", description: "Successfully organized our inaugural Holy Land pilgrimage group — 42 travelers, zero complications." },
+  { year: "2011", title: "Founded & First Tour", description: "Global Connection Travels & Tours established in Sri Lanka. In the same year, we successfully organized our inaugural pilgrimage group — and never looked back." },
   { year: "2015", title: "Expanded Services", description: "Launched full visa assistance, hotel reservations, and cruise package services across 20+ destinations." },
   { year: "2018", title: "5,000 Travelers", description: "Reached the milestone of 5,000 happy travelers — a testament to our commitment to quality and care." },
   { year: "2022", title: "Europe Specialists", description: "Became recognized specialists for European pilgrimage and holiday tours, including France, Greece, and Italy." },
@@ -35,29 +34,6 @@ const values = [
     icon: Users,
     title: "Community First",
     description: "We specialize in pilgrimage and group travel, building journeys that create lasting bonds among fellow travelers.",
-  },
-];
-
-const team = [
-  {
-    name: "Founder & Managing Director",
-    role: "Pilgrimages & Europe Tours Specialist",
-    description: "With over 15 years in the travel industry, our founder personally oversees every major pilgrimage and ensures each group receives the highest level of care.",
-  },
-  {
-    name: "Head of Operations",
-    role: "Visa & Documentation Expert",
-    description: "Our operations head manages all visa applications, documentation, and travel logistics with meticulous attention to detail.",
-  },
-  {
-    name: "Senior Travel Consultant",
-    role: "Holiday Tours & Air Ticketing",
-    description: "Specializing in holiday packages and airline reservations, our consultant ensures the best routes and fares for every traveler.",
-  },
-  {
-    name: "Client Relations Manager",
-    role: "Group Coordinator & 24/7 Support",
-    description: "Available around the clock, our client relations team ensures travelers always have someone to call — before, during, and after the trip.",
   },
 ];
 
@@ -113,10 +89,10 @@ export default function About() {
               <span className="text-accent text-sm font-bold uppercase tracking-widest">Our Story</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-white mb-6 leading-tight">
-              Connecting People<br />to the World Since 2008
+              Connecting People<br />to the World Since 2011
             </h1>
             <p className="text-blue-200 text-lg md:text-xl max-w-2xl leading-relaxed">
-              Global Connection Travels & Tours is Sri Lanka's trusted partner for pilgrimages, holiday tours, visa assistance, and air ticketing — built on 15+ years of genuine service and thousands of happy travelers.
+              Global Connection Travels & Tours is Sri Lanka's trusted partner for pilgrimages, holiday tours, visa assistance, and air ticketing — built on genuine service and thousands of happy travelers.
             </p>
           </motion.div>
         </div>
@@ -138,7 +114,7 @@ export default function About() {
               </h3>
               <div className="space-y-4 text-slate-600 leading-relaxed">
                 <p>
-                  Founded in 2008, Global Connection Travels & Tours was born from a simple belief: travel should be accessible, stress-free, and deeply meaningful — especially for those embarking on sacred pilgrimages.
+                  Founded in 2011, Global Connection Travels & Tours was born from a simple belief: travel should be accessible, stress-free, and deeply meaningful — especially for those embarking on sacred pilgrimages.
                 </p>
                 <p>
                   What began as a small pilgrimage organizer serving the Sri Lankan community has grown into a full-service travel company serving thousands of travelers each year across Europe, the Middle East, Asia, Australia, and the Americas.
@@ -255,49 +231,6 @@ export default function About() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Team */}
-      <section className="py-24 bg-slate-50">
-        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-sm font-bold text-accent uppercase tracking-wider mb-3">The People Behind the Journeys</h2>
-            <h3 className="text-3xl md:text-5xl font-serif font-bold text-slate-900 mb-4">Our Team</h3>
-            <p className="text-slate-500 text-lg max-w-xl mx-auto">Experienced, passionate, and dedicated — our team ensures every journey is handled with expertise and warmth.</p>
-          </motion.div>
-
-          <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-            variants={stagger}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-          >
-            {team.map((member) => (
-              <motion.div
-                key={member.name}
-                variants={fadeUp}
-                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
-              >
-                <div className="h-32 bg-gradient-to-br from-[#0F4C81] to-[#00A8E8] flex items-center justify-center">
-                  <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
-                    <Users className="w-8 h-8 text-white" />
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h4 className="font-bold text-slate-900 mb-0.5">{member.name}</h4>
-                  <p className="text-accent text-xs font-semibold uppercase tracking-wide mb-3">{member.role}</p>
-                  <p className="text-slate-500 text-sm leading-relaxed">{member.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
         </div>
       </section>
 
