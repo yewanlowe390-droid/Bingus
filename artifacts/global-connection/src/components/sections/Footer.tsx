@@ -33,22 +33,27 @@ export function Footer() {
           <div>
             <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Quick Links</h4>
             <ul className="space-y-4">
+              <li><Link href="/about" className="hover:text-accent transition-colors">About Us</Link></li>
               <li><a href="#destinations" className="hover:text-accent transition-colors">Destinations</a></li>
-              <li><a href="#tours" className="hover:text-accent transition-colors">Tour Packages</a></li>
+              <li><Link href="/tours" className="hover:text-accent transition-colors">Tour Packages</Link></li>
               <li><a href="#services" className="hover:text-accent transition-colors">Our Services</a></li>
-              <li><a href="#gallery" className="hover:text-accent transition-colors">Travel Gallery</a></li>
-              <li><a href="#contact" className="hover:text-accent transition-colors">Contact Us</a></li>
+              <li><Link href="/contact" className="hover:text-accent transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Popular Tours</h4>
-            <ul className="space-y-4">
-              <li><a href="#" className="hover:text-accent transition-colors">Holy Land Pilgrimage</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Jordan & Petra Explorer</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Greece Antiquities</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Dubai City Break</a></li>
-              <li><a href="#" className="hover:text-accent transition-colors">Sri Lanka Discovery</a></li>
+            <h4 className="text-white font-bold mb-6 uppercase tracking-wider text-sm">Contact</h4>
+            <ul className="space-y-4 text-sm">
+              <li className="leading-relaxed">No. 226/1/1, Negombo Road,<br />Wattala, Sri Lanka</li>
+              <li>
+                <a href="tel:+94117392070" className="hover:text-accent transition-colors">+94 11-7392070 (Office)</a>
+              </li>
+              <li>
+                <a href="https://wa.me/9477737920" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">+94 77 737920 (WhatsApp)</a>
+              </li>
+              <li>
+                <a href="mailto:info@globalconnection.lk" className="hover:text-accent transition-colors">info@globalconnection.lk</a>
+              </li>
             </ul>
           </div>
 

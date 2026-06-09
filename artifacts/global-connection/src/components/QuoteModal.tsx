@@ -13,7 +13,7 @@ import { useToast } from "@/hooks/use-toast";
 import { tours } from "@/data/toursData";
 
 // ── Update these two values with your real contact details ──────────────────
-const WHATSAPP_NUMBER = "94771234567"; // International format, no + or spaces
+const WHATSAPP_NUMBER = "9477737920"; // International format, no + or spaces
 const CONTACT_EMAIL   = "info@globalconnection.lk";
 // ────────────────────────────────────────────────────────────────────────────
 

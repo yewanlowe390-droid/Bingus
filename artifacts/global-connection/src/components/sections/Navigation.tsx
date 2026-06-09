@@ -23,7 +23,7 @@ export function Navigation() {
     { name: "Tours", href: "/tours", external: true },
     { name: "Services", href: "#services", external: false },
     { name: "Gallery", href: "#gallery", external: false },
-    { name: "Contact", href: "#contact", external: false },
+    { name: "Contact", href: "/contact", external: true },
   ];
 
   return (

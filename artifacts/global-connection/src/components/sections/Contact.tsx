@@ -63,7 +63,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 mb-1">Office Location</h4>
-                  <p className="text-slate-600">123 Travel Avenue, Colombo 03, Sri Lanka</p>
+                  <p className="text-slate-600">No. 226/1/1, Negombo Road,<br />Wattala, Sri Lanka</p>
                 </div>
               </div>
               
@@ -73,7 +73,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 mb-1">Contact Numbers</h4>
-                  <p className="text-slate-600">+94 11 234 5678 <br /> +94 77 123 4567 (WhatsApp)</p>
+                  <p className="text-slate-600">+94 11-7392070 (Office)<br />+94 77 737920 (Mobile / WhatsApp)</p>
                 </div>
               </div>
 
@@ -83,7 +83,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900 mb-1">Email Address</h4>
-                  <p className="text-slate-600">inquiries@globalconnection.lk</p>
+                  <p className="text-slate-600">info@globalconnection.lk</p>
                 </div>
               </div>
 

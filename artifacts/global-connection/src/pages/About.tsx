@@ -365,14 +365,14 @@ export default function About() {
                 Get a Free Quote
               </Button>
               <div className="flex items-center gap-6 text-slate-500 text-sm">
-                <span className="flex items-center gap-1.5">
+                <a href="tel:+94117392070" className="flex items-center gap-1.5 hover:text-[#0F4C81] transition-colors">
                   <Phone className="w-4 h-4 text-accent" />
-                  +94 77 000 0000
-                </span>
-                <span className="flex items-center gap-1.5">
+                  +94 11-7392070
+                </a>
+                <a href="mailto:info@globalconnection.lk" className="flex items-center gap-1.5 hover:text-[#0F4C81] transition-colors">
                   <Mail className="w-4 h-4 text-accent" />
                   info@globalconnection.lk
-                </span>
+                </a>
               </div>
             </div>
           </motion.div>

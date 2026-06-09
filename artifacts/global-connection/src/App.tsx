@@ -6,6 +6,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 import ToursPage from "@/pages/Tours";
 import AboutPage from "@/pages/About";
+import ContactPage from "@/pages/Contact";
 import { QuoteProvider } from "@/context/QuoteContext";
 import { QuoteModal } from "@/components/QuoteModal";
 
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/tours" component={ToursPage} />
       <Route path="/about" component={AboutPage} />
+      <Route path="/contact" component={ContactPage} />
       <Route component={NotFound} />
     </Switch>
   );
