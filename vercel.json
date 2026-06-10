@@ -1,0 +1,5 @@
+{
+  "installCommand": "pnpm install --no-frozen-lockfile",
+  "buildCommand": "cd artifacts/global-connection && pnpm install && pnpm run build",
+  "outputDirectory": "artifacts/global-connection/dist"
+}
